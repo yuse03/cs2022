@@ -422,3 +422,196 @@ Ok, one module loaded.
 [?1h=>>> :q
 [?1l>Leaving GHCi.
 ]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ git add .
+]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ git add .stack exec -- ghci src/TemplateAlgo.hs [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cce[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Plghci src/TemplateAlgo.hs[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pstack build[6Pbegincp begin ~/.local/bin/lear[Kaer[3Pllsgit clone git@github.com:yuse03/cs2022[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush[K[K[K[K[Kcommet[K[Kit -m 2[K"staat Algo"
+[main f97aa93] staat Algo
+ 4 files changed, 446 insertions(+), 1 deletion(-)
+ create mode 100644 ghci.log
+ create mode 100644 src/TemplateAlgo.hs
+ create mode 100644 stack.yaml.lock
+]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ git push
+Enumerating objects: 10, done.
+Counting objects:  10% (1/10)Counting objects:  20% (2/10)Counting objects:  30% (3/10)Counting objects:  40% (4/10)Counting objects:  50% (5/10)Counting objects:  60% (6/10)Counting objects:  70% (7/10)Counting objects:  80% (8/10)Counting objects:  90% (9/10)Counting objects: 100% (10/10)Counting objects: 100% (10/10), done.
+Delta compression using up to 16 threads
+Compressing objects:  14% (1/7)Compressing objects:  28% (2/7)Compressing objects:  42% (3/7)Compressing objects:  57% (4/7)Compressing objects:  71% (5/7)Compressing objects:  85% (6/7)Compressing objects: 100% (7/7)Compressing objects: 100% (7/7), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 9.04 KiB | 1.29 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:yuse03/cs2022
+   8c0117f..f97aa93  main -> main
+]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ Script started on 2022-09-26 11:30:58+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="139" LINES="13"]
+]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ cat 'which lghci'
+cat: 'which lghci': No such file or directory
+]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ cat `which lghci`
+#!/bin/bash
+ginput | tee -a -i ghci.log | stack exec -- ghci 2>&1 | tee -a -i ghci.log
+]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ codo [K[Ke ~/.local/bin
+Unable to connect to VS Code server: Error in request.
+Error: connect ENOENT /tmp/vscode-ipc-b4c5316d-a1a6-4691-83e4-acb8d360e235.sock
+[90m    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1157:16)[39m {
+  errno: [33m-2[39m,
+  code: [32m'ENOENT'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'/tmp/vscode-ipc-b4c5316d-a1a6-4691-83e4-acb8d360e235.sock'[39m
+}
+]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ code ~/.local/bin
+Unable to connect to VS Code server: Error in request.
+Error: connect ENOENT /tmp/vscode-ipc-b4c5316d-a1a6-4691-83e4-acb8d360e235.sock
+[90m    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1157:16)[39m {
+  errno: [33m-2[39m,
+  code: [32m'ENOENT'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'/tmp/vscode-ipc-b4c5316d-a1a6-4691-83e4-acb8d360e235.sock'[39m
+}
+]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ code ~/.local/binat `which lghci`'which lghci'`which lghci`
+#!/bin/bash
+
+stack exec -- ghci $1]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ lghci src/TemplateAlgo.hs 
+GHCi, version 8.10.7: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/yuuna/cs2022/.ghci
+[1 of 1] Compiling TemplateAlgo     ( src/TemplateAlgo.hs, interpreted )
+Ok, one module loaded.
+2022-09-26 11:41:03.870922365
+[?1h=>>> words "This is a penn[K"
+[?1l>["This","is","a","pen"]
+2022-09-26 11:43:20.277376389
+[?1h=>>> main[K[K[K[K:r
+[?1l>   1  module TemplateAlgo where
+   2  
+   3  main :: IO ()   
+   4  main = interact proc
+   5  
+   6  proc :: String -> String
+   7  proc input = case map (map readInt . words) (lines input) of
+   8      _ -> undefined
+   9  
+  10  readInt :: String -> Int
+  11  readInt = read
+Ok, one module loaded.
+2022-09-26 12:06:42.099658549
+[?1h=>>> :l app [K/main
+[?1l>*** Exception: app/main: openFile: does not exist (No such file or directory)
+2022-09-26 12:07:12.091714769
+[?1h=>>> :l app/main.hsain.hs[K[6DMain.hs[6D
+[?1l>   1    module Main where 
+   2    
+   3    main :: IO ()
+   4    main = someFunc
+   5    
+   6    func :: String -> String
+   7    func input = unlines (map show [1 .. 3])
+   8    
+   9    showInt :: Int -> String
+  10    showInt = show
+[1 of 1] Compiling Main             ( app/Main.hs, interpreted )
+
+[;1mapp/Main.hs:4:8: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: someFunc :: IO ()[0m[0m
+[;1m[34m  |[0m[0m
+[;1m[34m4 |[0m[0m main = [;1m[31msomeFunc[0m[0m
+[;1m[34m  |[0m[0m[;1m[31m        ^^^^^^^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+2022-09-26 12:07:31.526672252
+[?1h=>>> :l app/Main.hs
+[?1l>   1    module Main where 
+   2    
+   3    main :: IO ()
+   4    main = interact Func
+   5    
+   6    func :: String -> String
+   7    func input = unlines (map show [1 .. 3])
+   8    
+   9    showInt :: Int -> String
+  10    showInt = show
+[1 of 1] Compiling Main             ( app/Main.hs, interpreted )
+
+[;1mapp/Main.hs:4:17: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Data constructor not in scope: Func :: String -> String
+    • Perhaps you meant variable ‘func’ (line 7)[0m[0m
+[;1m[34m  |[0m[0m
+[;1m[34m4 |[0m[0m main = interact [;1m[31mFunc[0m[0m
+[;1m[34m  |[0m[0m[;1m[31m                 ^^^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+2022-09-26 12:07:57.745657897
+[?1h=>>> :l app/Main.hs
+[?1l>   1    module Main where 
+   2    
+   3    main :: IO ()
+   4    main = interact func
+   5    
+   6    func :: String -> String
+   7    func input = unlines (map show [1 .. 3])
+   8    
+   9    showInt :: Int -> String
+  10    showInt = show
+[1 of 1] Compiling Main             ( app/Main.hs, interpreted )
+Ok, one module loaded.
+2022-09-26 12:08:09.098325624
+[?1h=>>> :l app[K[K[K[K[K[Kmain
+[?1l>1
+2
+3
+2022-09-26 12:08:30.454228151
+[?1h=>>> 
+[?1l><stdin>: hGetChar: illegal operation (handle is semi-closed)
+]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ lghci src/TemplateAlgo.hs [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcat `which lghci`ode ~/.local/binat `which lghci`'which lghci'[9Pgit push[K[K[K[K[K[K[K[KScript started on 2022-10-03 11:02:58+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="132" LINES="13"]
+]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ cat @[K`which lgchi`
+^[[A^[[A        
+
+^[[C^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D                                    ^[[A    ^[[A    ^C
+]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ cat `which lgchi`[1Pi`[1Pi`hi`ci`
+#!/bin/bash
+
+stack exec -- ghci $1]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ lghci app?[K/MA[Kain.hs
+GHCi, version 8.10.7: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/yuuna/cs2022/.ghci
+[1 of 1] Compiling Main             ( app/Main.hs, interpreted )
+Ok, one module loaded.
+2022-10-03 11:07:52.955856413
+[?1h=>>> 27182 `mad` 818
+[?1l>
+[;1m<interactive>:1:7: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: mad :: t0 -> t1 -> t
+    • Perhaps you meant one of these:
+        ‘map’ (imported from Prelude), ‘max’ (imported from Prelude),
+        ‘mod’ (imported from Prelude)[0m[0m
+[0m[0m[0m2022-10-03 11:13:43.20348583
+[?1h=>>> 27182 `mad` 818d` 818[K[6Dod` 818[6D
+[?1l>188
+2022-10-03 11:13:55.502560216
+[?1h=>>> :r
+[?1l>   1  module Main where 
+   2  
+   3  showInt :: Int -> String
+   4  showInt = show
+   5  
+   6  readInt :: String -> Int
+   7  readInt = read
+   8  
+   9  main :: IO ()
+  10  main = interact func
+  11  
+  12  -- func :: String -> String
+  13  -- func input = unlines (map showInt [1 .. 3])
+  14  
+  15  func :: String -> String
+  16  func input = 27182 `mod` 818
+[1 of 1] Compiling Main             ( app/Main.hs, interpreted )
+
+[;1mapp/Main.hs:16:14: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • No instance for (Num String) arising from the literal ‘27182’
+    • In the first argument of ‘mod’, namely ‘27182’
+      In the expression: 27182 `mod` 818
+      In an equation for ‘func’: func input = 27182 `mod` 818[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m16 |[0m[0m func input = [;1m[31m27182[0m[0m `mod` 818
+[;1m[34m   |[0m[0m[;1m[31m              ^^^^^[0m[0m
+[0m[0m[0m
+[;1mapp/Main.hs:16:14: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • No instance for (Integral String) arising from a use of ‘mod’
+    • In the expression: 27182 `mod` 818
+      In an equation for ‘func’: func input = 27182 `mod` 818[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m16 |[0m[0m func input = [;1m[31m27182 `mod` 818[0m[0m
+[;1m[34m   |[0m[0m[;1m[31m              ^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+2022-10-03 11:14:56.657710174
+[?1h=>>> 
