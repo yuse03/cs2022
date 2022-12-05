@@ -615,4 +615,20 @@ Ok, one module loaded.
 [0m[0m[0mFailed, no modules loaded.
 2022-10-03 11:14:56.657710174
 [?1h=>>> Script started on 2022-10-17 10:54:42+09:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="139" LINES="13"]
-]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ 
+]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ Script started on 2022-11-04 15:58:04+09:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="132" LINES="13"]
+]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ [K]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ lghci
+GHCi, version 8.10.7: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/yuuna/cs2022/.ghci
+2022-11-04 15:58:24.512607771
+[?1h=>>> :l[Kt splttAttAt[K[3DitAt[3D[C[C[C
+[?1l>splitAt :: Int -> [a] -> ([a], [a])
+2022-11-04 15:59:07.10934166
+[?1h=>>> Script started on 2022-11-07 11:33:41+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="139" LINES="13"]
+]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ [K]0;yuuna@o_o: ~/cs2022[01;32myuuna@o_o[00m:[01;34m~/cs2022[00m$ lghci
+GHCi, version 8.10.7: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/yuuna/cs2022/.ghci
+2022-11-07 11:34:14.090880194
+[?1h=>>> :t splitAt
+[?1l>splitAt :: Int -> [a] -> ([a], [a])
+2022-11-07 11:34:34.749065524
+[?1h=>>> 
